@@ -1,0 +1,39 @@
+@import 'variables';
+@import 'mixins';
+
+.nav-bar {
+  background-color: $nav-bg-light;
+  padding: 1rem;
+  @include flex-center;
+  justify-content: space-between;
+  &__buttons {
+    display: flex;
+    gap: 0.5rem;
+  }
+  &__button {
+    font-weight: 500;
+  }
+  &__switch {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}
+
+.progress-bar-block {
+  margin-top: 0.5rem;
+}
+
+.dark-mode {
+  background-color: $body-bg-dark;
+  color: $text-light;
+  .nav-bar {
+    background-color: $nav-bg-dark;
+  }
+  .progress {
+    background-color: $progress-bg-dark;
+  }
+  .progress-bar {
+    background-color: $progress-bar-dark;
+  }
+}

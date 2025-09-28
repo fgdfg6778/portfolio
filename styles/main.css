@@ -1,0 +1,38 @@
+.nav-bar {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+.nav-bar__buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+.nav-bar__button {
+  font-weight: 500;
+}
+.nav-bar__switch {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.progress-bar-block {
+  margin-top: 0.5rem;
+}
+
+.dark-mode {
+  background-color: #181a1b;
+  color: #f8f9fa;
+}
+.dark-mode .nav-bar {
+  background-color: #212529;
+}
+.dark-mode .progress {
+  background-color: #343a40;
+}
+.dark-mode .progress-bar {
+  background-color: #0d6efd;
+}/*# sourceMappingURL=main.css.map */

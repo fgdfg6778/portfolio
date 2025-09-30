@@ -1,19 +1,3 @@
-// Dino walker styles
-#dino-walker {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  z-index: 1000;
-  width: 100px;
-  height: 100px;
-  pointer-events: auto;
-}
-#dino-img {
-  width: 100px;
-  height: auto;
-  cursor: pointer;
-  transition: transform 0.2s;
-}
 @import 'variables';
 @import 'mixins';
 
@@ -53,3 +37,70 @@
     background-color: $progress-bar-dark;
   }
 }
+
+// Dino walker styles
+#dino-walker {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 1000;
+  width: 100px;
+  height: 100px;
+  pointer-events: auto;
+}
+#dino-img {
+  width: 100px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+/* Google font (cute + readable) */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@400;600&display=swap');
+
+.home {
+  position: relative;
+  position: relative;
+  height: 100vh;
+  background: url("../imgs/dinoBackground.jpg") no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #333;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.6)
+    );
+    z-index: 1;
+  }
+
+  &__overlay {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__title {
+    font-family: 'Fredoka One', cursive;
+    font-size: 120px;
+    color: #bb0962;
+    text-shadow: 2px 4px 6px rgba(0,0,0,0.15);
+    margin: 0;
+  }
+
+  &__name {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 36px;
+    color: #34b8b8;
+    margin: 10px 0 0;
+    font-weight: 600;
+  }
+
+
+}
+

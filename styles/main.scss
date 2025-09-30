@@ -1,3 +1,19 @@
+// Dino walker styles
+#dino-walker {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 1000;
+  width: 100px;
+  height: 100px;
+  pointer-events: auto;
+}
+#dino-img {
+  width: 100px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
 @import 'variables';
 @import 'mixins';
 

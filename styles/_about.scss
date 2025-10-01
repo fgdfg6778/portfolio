@@ -1,4 +1,6 @@
 .about {
+    position: relative;
+  @include div-style;
   background: linear-gradient(135deg, #ffe6f2, #e6faff);
   padding: 80px 20px;
   text-align: center;

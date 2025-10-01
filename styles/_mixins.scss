@@ -4,3 +4,20 @@
   align-items: center;
   justify-content: center;
 }
+
+@mixin div-style {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    border-radius: 3rem;
+    border: 6px dashed white;
+    pointer-events: none;
+    z-index: 1;
+  }
+  margin-top: 12px;
+  border-radius: 3rem;
+}

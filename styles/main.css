@@ -81,7 +81,7 @@
   left: 1rem;
   right: 1rem;
   bottom: 1rem;
-  border-radius: 4rem;
+  border-radius: 3rem;
   border: 6px dashed white;
   pointer-events: none;
   z-index: 1;
@@ -97,6 +97,35 @@
   text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.15);
   margin: 0;
 }
+.home__title__letter {
+  display: inline-block;
+  margin: 0;
+  animation: wave 2s ease-in-out infinite;
+}
+.home__title__letter:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.home__title__letter:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.home__title__letter:nth-child(4) {
+  animation-delay: 0.6s;
+}
+.home__title__letter:nth-child(5) {
+  animation-delay: 0.8s;
+}
+.home__title__letter:nth-child(6) {
+  animation-delay: 1s;
+}
+.home__title__letter:nth-child(7) {
+  animation-delay: 1.2s;
+}
+.home__title__letter:nth-child(8) {
+  animation-delay: 1.4s;
+}
+.home__title__letter:nth-child(9) {
+  animation-delay: 1.6s;
+}
 .home__name {
   font-family: "Cherry Bomb One", cursive;
   font-size: 36px;
@@ -105,6 +134,14 @@
   font-weight: 600;
 }
 
+@keyframes wave {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
 .sprinkle-effect {
   pointer-events: none;
   z-index: 1;
@@ -112,9 +149,24 @@
 }
 
 .about {
+  position: relative;
+  margin-top: 12px;
+  border-radius: 3rem;
   background: linear-gradient(135deg, #ffe6f2, #e6faff);
   padding: 80px 20px;
   text-align: center;
+}
+.about::before {
+  content: "";
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  right: 1rem;
+  bottom: 1rem;
+  border-radius: 3rem;
+  border: 6px dashed white;
+  pointer-events: none;
+  z-index: 1;
 }
 .about h2 {
   font-family: "Fredoka One", cursive;
@@ -130,9 +182,24 @@
 }
 
 .projects {
+  position: relative;
+  margin-top: 12px;
+  border-radius: 3rem;
   background: #fff0f5;
   padding: 80px 20px;
   text-align: center;
+}
+.projects::before {
+  content: "";
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  right: 1rem;
+  bottom: 1rem;
+  border-radius: 3rem;
+  border: 6px dashed white;
+  pointer-events: none;
+  z-index: 1;
 }
 .projects h2 {
   color: #a78bfa;
@@ -163,9 +230,24 @@
 }
 
 .skills {
+  position: relative;
+  margin-top: 12px;
+  border-radius: 3rem;
   background: linear-gradient(135deg, #e6faff, #f5e6ff);
   padding: 80px 20px;
   text-align: center;
+}
+.skills::before {
+  content: "";
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  right: 1rem;
+  bottom: 1rem;
+  border-radius: 3rem;
+  border: 6px dashed white;
+  pointer-events: none;
+  z-index: 1;
 }
 .skills h2 {
   color: #66cccc;
@@ -188,9 +270,25 @@
 }
 
 .contact {
+  position: relative;
+  margin-top: 12px;
+  border-radius: 3rem;
+  border: #ff66b3 6px dashed;
   background: #fff;
   padding: 80px 20px;
   text-align: center;
+}
+.contact::before {
+  content: "";
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  right: 1rem;
+  bottom: 1rem;
+  border-radius: 3rem;
+  border: 6px dashed white;
+  pointer-events: none;
+  z-index: 1;
 }
 .contact h2 {
   color: #ff99cc;

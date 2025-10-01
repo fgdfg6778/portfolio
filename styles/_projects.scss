@@ -1,4 +1,6 @@
 .projects {
+  position: relative;
+  @include div-style;
   background: #fff0f5;
   padding: 80px 20px;
   text-align: center;

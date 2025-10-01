@@ -1,4 +1,6 @@
 .skills {
+    position: relative;
+  @include div-style;
   background: linear-gradient(135deg, #e6faff, #f5e6ff);
   padding: 80px 20px;
   text-align: center;

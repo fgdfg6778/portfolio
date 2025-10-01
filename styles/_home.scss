@@ -8,7 +8,7 @@
     left: 1rem;
     right: 1rem;
     bottom: 1rem;
-    border-radius: 4rem;
+    border-radius: 3rem;
     border: 6px dashed white;
     pointer-events: none;
     z-index: 1;
@@ -36,6 +36,46 @@
     color: #ff5dae;
     text-shadow: 2px 4px 6px rgba(0,0,0,0.15);
     margin: 0;
+
+    &__letter {
+        display: inline-block;
+        margin: 0;
+        animation: wave 2s ease-in-out infinite;
+    }
+
+    &__letter:nth-child(2) {
+        animation-delay: 0.2s;
+    }
+
+    &__letter:nth-child(3) {
+        animation-delay: 0.4s;
+    }
+
+    &__letter:nth-child(4) {
+        animation-delay: 0.6s;
+    }
+
+    &__letter:nth-child(5) {
+        animation-delay: 0.8s;
+    }
+
+    &__letter:nth-child(6) {
+        animation-delay: 1s;
+    }
+
+    &__letter:nth-child(7) {
+        animation-delay: 1.2s;
+    }
+
+    &__letter:nth-child(8) {
+        animation-delay: 1.4s;
+    }
+
+    &__letter:nth-child(9) {
+        animation-delay: 1.6s;
+    }
+
+
   }
 
   &__name {
@@ -45,6 +85,15 @@
     margin: 10px 0 0;
     font-weight: 600;
   }
+}
+
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
 }
 
 .sprinkle-effect {

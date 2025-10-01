@@ -1,18 +1,50 @@
-@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap");
+.cherry-bomb {
+  font-family: "Cherry Bomb One", cursive;
+}
+
 .nav-bar {
-  background-color: #f8f9fa;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  background: linear-gradient(90deg, #ffd6e0 0%, #e0c3fc 100%);
   padding: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 .nav-bar__buttons {
   display: flex;
-  gap: 0.5rem;
+  gap: 2rem;
 }
 .nav-bar__button {
   font-weight: 500;
+  border-radius: 1.5rem;
+  padding: 0.5rem 1.2rem;
+  border: none;
+  color: #333;
+  background: #ffe5ec;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease;
+}
+.nav-bar__button:nth-child(5) {
+  background: #ffe5ec;
+}
+.nav-bar__button:nth-child(2) {
+  background: #e0f7fa;
+}
+.nav-bar__button:nth-child(3) {
+  background: #e2f0cb;
+}
+.nav-bar__button:nth-child(4) {
+  background: #f3eac2;
+}
+.nav-bar__button:nth-child(1) {
+  background: #e0c3fc;
+}
+.nav-bar__button:hover {
+  filter: brightness(1.08) drop-shadow(0 0 8px rgba(165, 165, 165, 0.467));
+  color: #bb0962;
 }
 .nav-bar__switch {
   display: flex;
@@ -23,19 +55,58 @@
 .progress-bar-block {
   margin-top: 0.5rem;
 }
+.progress-bar-block .progress-bar {
+  background: #ff6b92;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
 
-.dark-mode {
-  background-color: #181a1b;
-  color: #f8f9fa;
+.home {
+  border-bottom-left-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+  position: relative;
+  height: 100vh;
+  background: url("../imgs/dinoBackground.jpg") no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #333;
 }
-.dark-mode .nav-bar {
-  background-color: #212529;
+.home::before {
+  content: "";
+  position: absolute;
+  top: 7rem;
+  left: 1rem;
+  right: 1rem;
+  bottom: 1rem;
+  border-radius: 4rem;
+  border: 6px dashed white;
+  pointer-events: none;
+  z-index: 1;
 }
-.dark-mode .progress {
-  background-color: #343a40;
+.home__overlay {
+  position: relative;
+  z-index: 2;
 }
-.dark-mode .progress-bar {
-  background-color: #0d6efd;
+.home__title {
+  font-family: "Cherry Bomb One", cursive;
+  font-size: 120px;
+  color: #ff5dae;
+  text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.15);
+  margin: 0;
+}
+.home__name {
+  font-family: "Cherry Bomb One", cursive;
+  font-size: 36px;
+  color: #34b8b8;
+  margin: 10px 0 0;
+  font-weight: 600;
+}
+
+.sprinkle-effect {
+  pointer-events: none;
+  z-index: 1;
+  transition: opacity 5s linear;
 }
 
 #dino-walker {
@@ -53,42 +124,4 @@
   height: auto;
   cursor: pointer;
   transition: transform 0.2s;
-}
-
-/* Google font (cute + readable) */
-.home {
-  position: relative;
-  position: relative;
-  height: 100vh;
-  background: url("../imgs/dinoBackground.jpg") no-repeat center center/cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: #333;
-}
-.home::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.6));
-  z-index: 1;
-}
-.home__overlay {
-  position: relative;
-  z-index: 2;
-}
-.home__title {
-  font-family: "Fredoka One", cursive;
-  font-size: 120px;
-  color: #bb0962;
-  text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.15);
-  margin: 0;
-}
-.home__name {
-  font-family: "Quicksand", sans-serif;
-  font-size: 36px;
-  color: #34b8b8;
-  margin: 10px 0 0;
-  font-weight: 600;
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,46 @@
+// Navigation and progress bar styles
+
+.nav-bar {
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  background: linear-gradient(90deg, #ffd6e0 0%, #e0c3fc 100%);
+  padding: 1rem;
+  @include flex-center;
+  justify-content: center;
+  &__buttons {
+    display: flex;
+    gap: 2rem;
+  }
+  &__button {
+    font-weight: 500;
+    border-radius: 1.5rem;
+    padding: 0.5rem 1.2rem;
+    border: none;
+    color: #333;
+    background: #ffe5ec;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    transition: all 0.3s ease;
+    &:nth-child(5) { background: #ffe5ec; }
+    &:nth-child(2) { background: #e0f7fa; }
+    &:nth-child(3) { background: #e2f0cb; }
+    &:nth-child(4) { background: #f3eac2; }
+    &:nth-child(1) { background: #e0c3fc; }
+    &:hover {
+      filter: brightness(1.08) drop-shadow(0 0 8px rgba(165, 165, 165, 0.467));
+      color: #bb0962;
+    }
+  }
+  &__switch {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}
+
+.progress-bar-block {
+  margin-top: 0.5rem;
+  .progress-bar {
+    background: #ff6b92;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+}

@@ -1,0 +1,53 @@
+// Home section styles
+
+.home {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 7rem;
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    border-radius: 4rem;
+    border: 6px dashed white;
+    pointer-events: none;
+    z-index: 1;
+  }
+  border-bottom-left-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+  position: relative;
+  height: 100vh;
+  background: url("../imgs/dinoBackground.jpg") no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #333;
+
+  &__overlay {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__title {
+    font-family: 'Cherry Bomb One', cursive;
+    font-size: 120px;
+    color: #ff5dae;
+    text-shadow: 2px 4px 6px rgba(0,0,0,0.15);
+    margin: 0;
+  }
+
+  &__name {
+    font-family: 'Cherry Bomb One', cursive;
+    font-size: 36px;
+    color: #34b8b8;
+    margin: 10px 0 0;
+    font-weight: 600;
+  }
+}
+
+.sprinkle-effect {
+  pointer-events: none;
+  z-index: 1;
+  transition: opacity 5s linear;
+}

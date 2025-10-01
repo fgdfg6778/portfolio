@@ -1,43 +1,8 @@
 @import 'variables';
 @import 'mixins';
-
-.nav-bar {
-  background-color: $nav-bg-light;
-  padding: 1rem;
-  @include flex-center;
-  justify-content: space-between;
-  &__buttons {
-    display: flex;
-    gap: 0.5rem;
-  }
-  &__button {
-    font-weight: 500;
-  }
-  &__switch {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-}
-
-.progress-bar-block {
-  margin-top: 0.5rem;
-}
-
-.dark-mode {
-  background-color: $body-bg-dark;
-  color: $text-light;
-  .nav-bar {
-    background-color: $nav-bg-dark;
-  }
-  .progress {
-    background-color: $progress-bg-dark;
-  }
-  .progress-bar {
-    background-color: $progress-bar-dark;
-  }
-}
-
+@import 'fonts';
+@import 'nav';
+@import 'home';
 // Dino walker styles
 #dino-walker {
   position: fixed;
@@ -54,53 +19,3 @@
   cursor: pointer;
   transition: transform 0.2s;
 }
-
-/* Google font (cute + readable) */
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@400;600&display=swap');
-
-.home {
-  position: relative;
-  position: relative;
-  height: 100vh;
-  background: url("../imgs/dinoBackground.jpg") no-repeat center center/cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: #333;
-
-  &::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-      rgba(255, 255, 255, 0.4),
-      rgba(255, 255, 255, 0.6)
-    );
-    z-index: 1;
-  }
-
-  &__overlay {
-    position: relative;
-    z-index: 2;
-  }
-
-  &__title {
-    font-family: 'Fredoka One', cursive;
-    font-size: 120px;
-    color: #bb0962;
-    text-shadow: 2px 4px 6px rgba(0,0,0,0.15);
-    margin: 0;
-  }
-
-  &__name {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 36px;
-    color: #34b8b8;
-    margin: 10px 0 0;
-    font-weight: 600;
-  }
-
-
-}
-

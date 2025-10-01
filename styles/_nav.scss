@@ -7,6 +7,7 @@
   padding: 1rem;
   @include flex-center;
   justify-content: center;
+  box-shadow: 0 8px 24px -8px #ffb4a1;
   &__buttons {
     display: flex;
     gap: 2rem;

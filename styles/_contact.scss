@@ -1,0 +1,42 @@
+.contact {
+  background: #fff;
+  padding: 80px 20px;
+  text-align: center;
+
+  h2 {
+    color: #ff99cc;
+    margin-bottom: 20px;
+  }
+
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    input, textarea {
+      padding: 12px;
+      border-radius: 12px;
+      border: 2px solid #ffd6e8;
+      font-size: 16px;
+      font-family: 'Quicksand', sans-serif;
+    }
+
+    button {
+      background: #ff99cc;
+      color: #fff;
+      border: none;
+      border-radius: 12px;
+      padding: 12px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.2s;
+
+      &:hover {
+        background: #ff66b3;
+      }
+    }
+  }
+}

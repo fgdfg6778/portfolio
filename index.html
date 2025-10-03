@@ -16,11 +16,14 @@
             <div class="container d-flex flex-column">
                 <div class="d-flex w-100 justify-content-center align-items-center">
                     <div class="nav-bar__buttons">
-                        <a href="#home" class="btn btn-outline-primary nav-bar__button">Home</a>
-                        <a href="#about" class="btn btn-outline-primary nav-bar__button">About</a>
-                        <a href="#projects" class="btn btn-outline-primary nav-bar__button">Projects</a>
-                        <a href="#skills" class="btn btn-outline-primary nav-bar__button">Skills</a>
-                        <a href="#contact" class="btn btn-outline-primary nav-bar__button">Contact</a>
+                        <a href="#home" class="nav-bar__button">Home</a>
+                        <a href="#about" class="nav-bar__button">About</a>
+                        <a href="#projects" class="nav-bar__button">Projects</a>
+                        <a href="#skills" class="nav-bar__button">Skills</a>
+                        <a href="#contact" class="nav-bar__button">Contact</a>
+                        <a href="https://github.com/fgdfg6778" target="_blank" rel="noopener" class="nav-bar__button nav-bar__button--github">
+                            GitHub
+                        </a>
                     </div>
                 </div>
                 <div class="progress-bar-block w-100 mt-2">
@@ -57,20 +60,36 @@
         </section>
 
     <section id="projects" class="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="project-grid">
-            <div class="project-card">
-                <h3>Project One</h3>
-                <p>Short description of your project.</p>
+      <div class="container">
+        <h2>Featured Projects</h2>
+        <div class="project-grid">
+          <!-- First row: Project 1, Img, Project 2 -->
+          <div class="project-row">
+            <div class="project-card project-card--one">
+              <h3>Project One</h3>
+              <p>Build a fun weather app for kids.</p>
+              <span class="project-card__more">Click to learn more!</span>
             </div>
-            <div class="project-card">
-                <h3>Project Two</h3>
-                <p>Another cool coding experiment.</p>
+            <img src="imgs/dino_skate.png" alt="Project 1" class="project-img">
+            <div class="project-card project-card--two">
+              <h3>Project Two</h3>
+              <p>Track your daily habits with cute charts.</p>
+              <span class="project-card__more">Click to learn more!</span>
             </div>
+          </div>
+          <!-- Second row: Img, Project 3, Img -->
+          <div class="project-row">
+            <img src="imgs/dino_flowers.png" alt="Project 2" class="project-img">
+            <div class="project-card project-card--three">
+              <h3>Project Three</h3>
+              <p>Share your favorite recipes with friends.</p>
+              <span class="project-card__more">Click to learn more!</span>
             </div>
+            <img src="imgs/dino_laptop.png" alt="Project 3" class="project-img">
+          </div>
         </div>
-        </section>
+      </div>
+    </section>
 
     <section id="skills" class="skills">
         <div class="container">
@@ -78,7 +97,6 @@
             <ul class="skills-list">
             <li>HTML / CSS / SCSS</li>
             <li>JavaScript / React</li>
-            <li>Node.js</li>
             <li>Git & GitHub</li>
             </ul>
         </div>

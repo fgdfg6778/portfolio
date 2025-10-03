@@ -19,6 +19,7 @@
     border: none;
     color: #333;
     background: #ffe5ec;
+    text-decoration: none;
     box-shadow: 0 2px 8px rgba(0,0,0,0.04);
     transition: all 0.3s ease;
     &:nth-child(5) { background: #ffe5ec; }
@@ -28,7 +29,7 @@
     &:nth-child(1) { background: #e0c3fc; }
     &:hover {
       filter: brightness(1.08) drop-shadow(0 0 8px rgba(165, 165, 165, 0.467));
-      color: #bb0962;
+      color: #852253;
     }
   }
   &__switch {
@@ -43,5 +44,16 @@
   .progress-bar {
     background: #ff6b92;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+}
+
+.nav-bar__button--github {
+  background: #9773d8; // purple-gray pastel
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  &:hover, &:focus {
+    background: #9575cd;
+    color: #fff;
   }
 }

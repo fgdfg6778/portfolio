@@ -25,6 +25,7 @@
   border: none;
   color: #333;
   background: #ffe5ec;
+  text-decoration: none;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
   transition: all 0.3s ease;
 }
@@ -45,7 +46,7 @@
 }
 .nav-bar__button:hover {
   filter: brightness(1.08) drop-shadow(0 0 8px rgba(165, 165, 165, 0.467));
-  color: #bb0962;
+  color: #852253;
 }
 .nav-bar__switch {
   display: flex;
@@ -59,6 +60,17 @@
 .progress-bar-block .progress-bar {
   background: #ff6b92;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.nav-bar__button--github {
+  background: #9773d8;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+}
+.nav-bar__button--github:hover, .nav-bar__button--github:focus {
+  background: #9575cd;
+  color: #fff;
 }
 
 .home {
@@ -207,26 +219,74 @@
 }
 .projects .project-grid {
   display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: repeat(2, 220px);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+.projects .project-row {
+  display: contents;
+}
+.projects .project-card, .projects .project-img {
+  height: 100%;
+  width: 100%;
+  border-radius: 1.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0;
 }
 .projects .project-card {
+  border: 4px dashed #fff;
+  padding: 32px 20px;
+  box-shadow: 0 2px 8px rgba(224, 195, 252, 0.2666666667);
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+  z-index: 2;
   background: #fff;
-  border-radius: 16px;
-  padding: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s;
 }
-.projects .project-card:hover {
-  transform: translateY(-4px);
+.projects .project-card:hover, .projects .project-card:focus {
+  transform: scale(1.06);
+  box-shadow: 0 8px 32px rgba(179, 157, 219, 0.5333333333);
 }
 .projects .project-card h3 {
-  color: #ff99cc;
-  margin-bottom: 10px;
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 0.5em;
+  letter-spacing: -0.02em;
 }
 .projects .project-card p {
-  font-size: 14px;
-  color: #666;
+  font-size: 1.1rem;
+  margin-bottom: 0.5em;
+}
+.projects .project-card__more {
+  display: block;
+  font-size: 1rem;
+  color: #888;
+  margin-top: 0.5em;
+  font-style: italic;
+}
+.projects .project-card--one {
+  background: linear-gradient(135deg, #ffe0e9 0%, #fff0f5 100%);
+  border-color: #ffb4a1;
+}
+.projects .project-card--two {
+  background: linear-gradient(135deg, #e0f7fa 0%, #f0fff0 100%);
+  border-color: #80deea;
+}
+.projects .project-card--three {
+  background: linear-gradient(135deg, #f3e5f5 0%, #e1bee7 100%);
+  border-color: #b39ddb;
+}
+.projects .project-img {
+  height: 100%;
+  max-width: 100%;
+  border-radius: 1.5rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  align-self: stretch;
+  margin: 0 8px;
+  box-shadow: none;
 }
 
 .skills {
@@ -258,6 +318,8 @@
   flex-wrap: wrap;
   gap: 15px;
   justify-content: center;
+  list-style: none;
+  padding: 0;
 }
 .skills .skills-list li {
   background: #fff;

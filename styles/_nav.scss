@@ -1,6 +1,8 @@
 // Navigation and progress bar styles
 
 .nav-bar {
+  overflow: hidden;
+  width: 100%;
   border-bottom-left-radius: 2rem;
   border-bottom-right-radius: 2rem;
   background: linear-gradient(90deg, #ffd6e0 0%, #e0c3fc 100%);
@@ -8,6 +10,40 @@
   @include flex-center;
   justify-content: center;
   box-shadow: 0 8px 24px -8px #ffb4a1;
+
+  &__dino {
+    position: absolute;
+    top: -10px;
+    z-index: 10;
+    width: 160px;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &--left {
+      left: -40px;
+      rotate: 15deg;
+    }
+    &--right {
+      right: -40px;
+      rotate: -15deg;
+
+      img{
+        height: 145px;
+        width: auto;
+      }
+    }
+
+    &-img {
+      width: 160px;
+      height: auto;
+      object-fit: contain;
+      pointer-events: none;
+      user-select: none;
+    }
+  }
+
   &__buttons {
     display: flex;
     gap: 2rem;

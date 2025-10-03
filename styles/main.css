@@ -385,6 +385,37 @@
   background: #ff66b3;
 }
 
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 32px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: center;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  color: #b39ddb;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+.contact-link:hover, .contact-link:focus {
+  color: #ff66b3;
+  text-decoration: underline;
+}
+
+.contact-icon {
+  display: inline-block;
+  font-size: 1.5rem;
+  margin-right: 12px;
+  vertical-align: middle;
+}
+
 #dino-walker {
   position: fixed;
   left: 0;
@@ -400,4 +431,9 @@
   height: auto;
   cursor: pointer;
   transition: transform 0.2s;
+}
+
+body {
+  background: url("../imgs/background1.png") center top;
+  background-size: auto;
 }/*# sourceMappingURL=main.css.map */

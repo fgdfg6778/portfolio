@@ -55,15 +55,23 @@
                 </h1>
                 <h2 class="home__name">Adam Kruźlak</h2>
             </div>
+            <button id="home-scroll-btn" class="home__scroll-btn" aria-label="Scroll down">
+                <img src="imgs/dino_click.png" alt="Scroll down" class="home__scroll-img">
+            </button>
     </section>
 
     <div class="container-xl px-4">
         <section id="about" class="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Hi, I’m Adam Kruźlak — a coding enthusiast who loves building fun, creative, and interactive projects with a cute aesthetic!</p>
-        </div>
-        </section>
+  <img src="imgs/dinoKing.png" alt="Dino King" class="about__dino about__dino--top-left">
+  <div class="about__content">
+    <h2>About Me</h2>
+    <p>
+      Hi! I'm Adam Kruźlak, a passionate developer who loves building playful, creative web experiences.<br>
+      I enjoy working with modern technologies and bringing ideas to life!
+    </p>
+  </div>
+  <img src="imgs/laying_dino.png" alt="Laying Dino" class="about__dino about__dino--bottom-right">
+</section>
 
     <section id="projects" class="projects">
       <div class="container">
@@ -115,37 +123,42 @@
         </section>
 
     <section id="contact" class="contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <ul class="contact-list">
-              <li>
-                <a href="mailto:your.email@example.com" class="contact-link">
-                  <span class="contact-icon">&#9993;</span>
-                  your.email@example.com
-                </a>
-              </li>
-              <li>
-                <a href="tel:+48123456789" class="contact-link">
-                  <span class="contact-icon">&#128222;</span>
-                  +48 123 456 789
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/fgdfg6778" target="_blank" rel="noopener" class="contact-link">
-                  <span class="contact-icon" aria-label="GitHub">
-                    <!-- GitHub SVG icon -->
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="#b39ddb" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;">
-                      <path d="M12 2C6.477 2 2 6.484 2 12.012c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.483 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.004.07 1.532 1.032 1.532 1.032.892 1.529 2.341 1.088 2.91.833.091-.646.35-1.088.636-1.339-2.221-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.254-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.338 1.909-1.295 2.748-1.025 2.748-1.025.546 1.378.202 2.396.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.847-2.337 4.695-4.566 4.944.359.309.678.919.678 1.852 0 1.336-.012 2.417-.012 2.747 0 .268.18.579.688.481C19.138 20.175 22 16.427 22 12.012 22 6.484 17.523 2 12 2z"/>
-                    </svg>
-                  </span>
-                  github.com/fgdfg6778
-                </a>
-              </li>
-            </ul>
-        </div>
-        </section>
+  <div class="container d-flex align-items-center justify-content-center flex-wrap">
+    <div class="w-100">
+      <h2 class="text-center mb-4">Contact</h2>
+    </div>
+    <img src="imgs/dino_phone.png" alt="Dino with phone" class="contact__img me-4">
+    <ul class="contact-list ms-4">
+      <li>
+        <a href="mailto:your.email@example.com" class="contact-link">
+          <span class="contact-icon">&#9993;</span>
+          your.email@example.com
+        </a>
+      </li>
+      <li>
+        <a href="tel:+48123456789" class="contact-link">
+          <span class="contact-icon">&#128222;</span>
+          +48 123 456 789
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/fgdfg6778" target="_blank" rel="noopener" class="contact-link">
+          <span class="contact-icon" aria-label="GitHub">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="#b39ddb" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;">
+              <path d="M12 2C6.477 2 2 6.484 2 12.012c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.483 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.004.07 1.532 1.032 1.532 1.032.892 1.529 2.341 1.088 2.91.833.091-.646.35-1.088.636-1.339-2.221-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.254-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.338 1.909-1.295 2.748-1.025 2.748-1.025.546 1.378.202 2.396.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.847-2.337 4.695-4.566 4.944.359.309.678.919.678 1.852 0 1.336-.012 2.417-.012 2.747 0 .268.18.579.688.481C19.138 20.175 22 16.427 22 12.012 22 6.484 17.523 2 12 2z"/>
+            </svg>
+          </span>
+          github.com/fgdfg6778
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
     </div>
     
+    <footer class="footer text-center py-4">
+
+    </footer>
 
 
 

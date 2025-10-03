@@ -85,6 +85,30 @@
     margin: 10px 0 0;
     font-weight: 600;
   }
+
+  &__scroll-btn {
+    position: absolute;
+    left: 50%;
+    bottom: 32px;
+    transform: translateX(-50%);
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    z-index: 10;
+    transition: transform 0.2s;
+
+    &:hover, &:focus {
+      transform: translateX(-50%) scale(1.08);
+      outline: none;
+    }
+  }
+
+  &__scroll-img {
+    width: 120px;
+    height: auto;
+    display: block;
+  }
 }
 
 @keyframes wave {

@@ -637,6 +637,48 @@
   text-decoration: none;
 }
 
+.footer__land {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 120px;
+  overflow: hidden;
+  background: none;
+}
+
+.footer__img {
+  height: 120px;
+  width: auto;
+  display: block;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  pointer-events: none;
+  -o-object-fit: contain;
+     object-fit: contain;
+  align-self: flex-end;
+}
+
+.footer__land-repeat {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 0;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.footer__img--repeat {
+  height: 120px;
+  width: auto;
+  display: block;
+  -o-object-fit: contain;
+     object-fit: contain;
+  align-self: flex-end;
+}
+
 #dino-walker {
   position: fixed;
   left: 0;
